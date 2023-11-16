@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayCourse);
         listView.setAdapter(adapter);
 
-        new Readjson().execute("https://vnexpress.net/rss/giai-tri.rss");
+        new Readjson().execute("http://localhost:801/data.json");
     }
 
         private class Readjson extends AsyncTask<String, Void, String> {
